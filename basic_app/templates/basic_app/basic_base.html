@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+</head>
+<body>
+<nav class="jumbotron">
+    <ol><a href="{% url 'basic_app:list' %}">School</a></ol>
+
+
+</nav>
+<div class="container">
+{% block content %}
+
+{% endblock %}
+</div>
+</body>
+</html>

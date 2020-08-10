@@ -1,0 +1,5 @@
+{% block content %}
+    {% for school in schools %}
+        <ol><a href={{ school.id }}>{{ school.name }}</a></ol>
+    {% endfor %}
+{% endblock %}

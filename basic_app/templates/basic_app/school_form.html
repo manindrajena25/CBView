@@ -1,0 +1,13 @@
+{% block content %}
+    {% if not form.instance.pk %}
+        <h2>Create Form</h2>
+        {% else %}
+        <h2>Update Form</h2>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="btn btn-primary" type="submit">
+    </form>
+{% endblock %}
